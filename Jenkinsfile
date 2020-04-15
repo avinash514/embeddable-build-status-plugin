@@ -3,6 +3,7 @@ def BuildBadge = addEmbeddableBadgeConfiguration(id: "buildbadge", subject: "Emb
 pipeline {
     agent any
     stages {
+        stage('Embeddable Build Status.'){
         steps {
             script {
                 sh "This is Embeddable Build Status Plugin Test"
@@ -24,6 +25,7 @@ pipeline {
                     error 'Build failed'
                 }
             }
+        }
         }
     }
 }
