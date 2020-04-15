@@ -6,7 +6,7 @@ pipeline {
         stage('Embeddable Build Status.'){
         steps {
             script {
-                sh "This is Embeddable Build Status Plugin Test"
+                println "This is Embeddable Build Status Plugin Test"
                 BuildBadge.setStatus('running')
                 try {
                     //RunBuild()
