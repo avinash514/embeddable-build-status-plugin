@@ -7,6 +7,7 @@ pipeline {
         steps {
             script {
                 println "This is Embeddable Build Status Plugin Test"
+                println "This is PR Hook Test"
                 BuildBadge.setStatus('running')
                 try {
                     //RunBuild()
