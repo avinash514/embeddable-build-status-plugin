@@ -8,6 +8,8 @@ pipeline {
             script {
                 println "This is Embeddable Build Status Plugin Test"
                 println "This is PR Hook Test"
+                println "${ghprbPullId}"
+                
                 BuildBadge.setStatus('running')
                 try {
                     //RunBuild()
